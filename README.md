@@ -1,16 +1,20 @@
 ## Kafka Logger for Python
 
- ### Why this exists?
+### Why this exists?
 
- There's an existing python package that can send log to logstash through Kafka,
- but it has two problems:
+There's an existing python package that can send log to logstash through Kafka,
+but it has two problems:
 
- 1. It's built on top of a specific python kafka package and it's outdated,
- which left user no choice on which Kafka they can use.
- 2. It only uses default log formatting from python logging package,
- which doesn't provide much useful information.
+1. It's built on top of a specific python kafka package and it's outdated,
+which left user no choice on which Kafka they can use.
+2. It only uses default log formatting from python logging package,
+which doesn't provide much useful information.
 
- ### Usage
+### Install
+
+    pip install kafka-logger
+
+### Usage
 
     import logging
     import KafkaLoggingHandler
