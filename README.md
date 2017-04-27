@@ -17,7 +17,10 @@ which doesn't provide much useful information.
 ### Usage
 
     import logging
-    import KafkaLoggingHandler
+    # your choice of Kafka
+    from kafka import KafkaProducer
+    from kafka_logger.handler import KafkaLoggingHandler
+
     logger = logging.getLogger('python-logstash-logger')
     logger.setLevel(logging.INFO)
     log_producer = KafkaProducer(bootstrap_servers=KAFKA_BROKER)
